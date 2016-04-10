@@ -1,0 +1,144 @@
+header{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1{
+  margin: auto;
+  padding: 0px 180px;
+  text-align: center;
+  width: auto;
+  border: 2px solid grey;
+  font: normal 500  24px/60px sans-serif;
+  font-weight: normal;
+}
+aside{
+  float: left;
+  width: 49%;
+  border: 2px solid grey;
+}
+.pokDek{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  height: 100%;
+}
+.pokem{
+  cursor: pointer;
+  margin: 20px;
+  width: 27%;
+  min-width: 90px;
+  min-height: 90px;
+  border: 2px solid grey;
+  padding: 2px;
+  text-align: center;
+}
+.pokem:hover{
+  border-color: #66e;
+}
+img{
+  width: 90%;
+  height: auto;
+  min-height: 40px;
+  min-width: 40px;
+  border: 2px solid grey;
+}
+content{
+  position: fixed;
+  justify-content:center;
+  right: 15%;
+  text-align: center;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  border: 2px solid grey;
+}
+.button{
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 96%;
+  background-color: #008CFF;
+  color: #fff;
+  font: normal 500 14px/20px sans-serif;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.type {
+  display: inline-block;
+  border-radius: 5px;
+  padding:5px;
+  margin: 0 5px 5px 0;
+  text-transform: capitalize;
+}
+
+.type--fire {
+  background-color: red;
+  color: white;
+}
+
+.type--electric {
+  background-color: yellow;
+}
+
+.type--water {
+  background-color: blue;
+  color: white;
+}
+
+.type--bug, .type--grass {
+  background-color: green;
+  color: white;
+}
+
+.type--normal {
+  background-color: #666;
+  color: white;
+}
+
+.type--flying {
+  background-color: #aaf;
+}
+
+.type--poison {
+  background-color: violet;
+}
+
+.type--ground {
+  background-color: brown;
+  color: white;
+}
+
+.type--fairy {
+  background-color: pink;
+}
+
+.type--fighting {
+  background-color: #faa;
+}
+
+.type--psychic {
+  background-color: orange;
+}
+
+.type--rock {
+  background-color: gray;
+}
+
+.type--ice {
+  background-color: blue;
+}
+
+.type--ghost {
+  background-color: #bbb;
+}
+
+.type--dragon {
+  background-color: #7a2;
+}

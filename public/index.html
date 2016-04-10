@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Pokedex</h1>
+  </header>
+  <aside> 
+  <div class="pokDek"id="pokCollection"></div>
+  
+  <button class="button" id="loadMore">Load more</button>
+  </aside>
+  <content id="pokemonDetails">
+  </content>
+
+
+  <script type="text/template" id="pokedexTempl">
+      <div class="pokem" onclick="showDetails(%id%)">
+      <img src="%ava%" alt=""/>
+      <p>%name%</p>
+      <ul>%types%</ul>
+
+    </div>
+  </script>
+  <script type="text/template" id="showDetails">
+  <div>
+    <img src="%ava%" alt=""/>
+    <h3>%name% #%id%</h3>
+    <table>
+      <tr>
+        <th>
+          Types
+        </th>
+        <td>
+          <ul>%types%</ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Attack</th>
+        <td>%attack%</td>
+      </tr>
+      <tr>
+        <th>Defense</th>
+        <td>%defense%</td>
+      </tr>
+      <tr>
+        <th>HP</th>
+        <td>%hp%</td>
+      </tr>
+      <tr>
+        <th>SP Attack</th>
+        <td>%sp_atk%</td>
+      </tr>
+      <tr>
+        <th>SP Defense</th>
+        <td>%sp_def%</td>
+      </tr>
+      <tr>
+        <th>Speed</th>
+        <td>%speed%</td>
+      </tr>
+      <tr>
+        <th>Weight</th>
+        <td>%weight%</td>
+      
+      </tr>
+      <tr>
+        <th>Total moves</th>
+        <td>%totalMoves%</td>
+      </tr>
+    </table>
+    </div>
+
+  </script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
