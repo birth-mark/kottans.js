@@ -1,5 +1,5 @@
 var host ='http://pokeapi.co'
-var nextPath = '/api/v1/pokemon/?limit=200';
+var nextPath = '/api/v1/pokemon/?limit=12';
 var avatarSrc = id => "http://pokeapi.co/media/img/"+id+".png";
 var tpItem = item => '<li class="type type--'+item.name+'">'+item.name+"</li>";
 var tpList = list => list.reduce((r, i)=>(r+tpItem(i)),"");
